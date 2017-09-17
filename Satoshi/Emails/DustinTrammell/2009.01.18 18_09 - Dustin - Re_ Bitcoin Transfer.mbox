@@ -1,0 +1,64 @@
+From dtrammell@dustintrammell.com Sun Jan 18 18:09:32 2009
+Subject: Re: Bitcoin Transfer
+From: "Dustin D. Trammell" <dtrammell@dustintrammell.com>
+To: satoshi@vistomail.com
+In-Reply-To: <CHILKAT-MID-365d0fe3-70f0-6f32-75a4-0c939706daf9@server123>
+References: <CHILKAT-MID-365d0fe3-70f0-6f32-75a4-0c939706daf9@server123>
+Content-Type: multipart/signed; micalg=pgp-sha1; protocol="application/pgp-signature"; boundary="=-z95o/s3uHUjxY9HL4YGL"
+Message-Id: <1232323771.9962.266.camel@localhost>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.10.3 Dropline GNOME 
+Date: Sun, 18 Jan 2009 18:09:32 -0600
+X-Evolution-Format: text/plain
+X-Evolution-Account: 1169982963.29994.8@slimer
+X-Evolution-Transport:
+ smtp://dustintrammell-dtrammell;auth=CRAM-MD5@mail.oaklabs.net/;use_ssl=always
+X-Evolution-Fcc: mbox:/home/druid/.evolution/mail/local#Sent
+
+
+--=-z95o/s3uHUjxY9HL4YGL
+Content-Type: text/plain
+Content-Transfer-Encoding: quoted-printable
+
+On Mon, 2009-01-19 at 00:54 +0800, Satoshi Nakamoto wrote:
+> It should be your Bitcoin address at home that you received it
+> with.  There's no way for it to know who it's from, so the best
+> it can do is tell which of your addresses it was received on.
+> You can create multiple addresses and give a different address
+> to each person and label them to help figure out who's sending
+> to you.
+
+Ah!  I didn't even notice it was my address at home, you're right (:  I
+do have multiple addresses created at home so I didn't make the
+connection.
+
+> It doesn't know any names other than what you tell it.  The name
+> printed there is what's associated in your address book for that
+> address, either under the Address Book button or the "Change..."
+> button to the right of your Bitcoin address.
+
+Ahh you're right, 'Satoshi' is associated with the address that received
+the payment under the Change button's addresses.  I don't recall setting
+that value though, is that the default or something? (this is the first,
+default, address that the application generated itself when I first ran
+it)
+
+--=20
+Dustin D. Trammell
+dtrammell@dustintrammell.com
+http://www.dustintrammell.com
+
+--=-z95o/s3uHUjxY9HL4YGL
+Content-Type: application/pgp-signature; name=signature.asc
+Content-Description: This is a digitally signed message part
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.7 (GNU/Linux)
+
+iD8DBQBJc8S59zsZk8QKxrkRAhC7AJ9VVeazKMab1uqLcmnnuR/3KP6UqgCeInZN
+ynEtSfyVjJr4NY+x5uZBibA=
+=4pvz
+-----END PGP SIGNATURE-----
+
+--=-z95o/s3uHUjxY9HL4YGL--
+

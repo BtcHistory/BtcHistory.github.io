@@ -1,0 +1,52 @@
+From dtrammell@dustintrammell.com Sun Jan 18 09:23:02 2009
+Subject: BitCoin Transfer
+From: "Dustin D. Trammell" <dtrammell@dustintrammell.com>
+To: satoshi@vistomail.com
+Content-Type: multipart/signed; micalg=pgp-sha1; protocol="application/pgp-signature"; boundary="=-44zoTkcIOB2SVce0O9o3"
+Message-Id: <1232292181.9962.257.camel@localhost>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.10.3 Dropline GNOME 
+Date: Sun, 18 Jan 2009 09:23:02 -0600
+X-Evolution-Format: text/plain
+X-Evolution-Account: 1169982963.29994.8@slimer
+X-Evolution-Transport:
+ smtp://dustintrammell-dtrammell;auth=CRAM-MD5@mail.oaklabs.net/;use_ssl=always
+X-Evolution-Fcc: mbox:/home/druid/.evolution/mail/local#Sent
+
+
+--=-44zoTkcIOB2SVce0O9o3
+Content-Type: text/plain
+Content-Transfer-Encoding: quoted-printable
+
+Hey Satoshi,
+
+After that first transfer of 25.00, you didn't send me another 100.00
+did you?  I sent myself 100.00 from my BitCoin application at work to my
+one at home using the BitCoin address rather than by IP.  My application
+at home has a 100.00 transfer received, however it's transaction details
+say "Received with: Satoshi 12higDjoCCNXSA95xZMWUdPvXNmkAduhWv".  That
+is not my BitCoin address from work, so I assume this means that I
+received the payment encoded with a block that was computed by your
+client?  If so, how did it know your name in addition to the BitCoin
+address that generated it?  I don't recall there being a place in my
+application to even put my name.
+
+--=20
+Dustin D. Trammell
+dtrammell@dustintrammell.com
+http://www.dustintrammell.com
+
+--=-44zoTkcIOB2SVce0O9o3
+Content-Type: application/pgp-signature; name=signature.asc
+Content-Description: This is a digitally signed message part
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.7 (GNU/Linux)
+
+iD8DBQBJc0lT9zsZk8QKxrkRAmkxAJ9PHdbDIyutScHXLr5CXRQbnek/AACfYPIt
+BqjggBKi2v5ZNfY7c6Fvu+E=
+=wSLo
+-----END PGP SIGNATURE-----
+
+--=-44zoTkcIOB2SVce0O9o3--
+

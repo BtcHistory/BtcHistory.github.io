@@ -1,0 +1,102 @@
+From dtrammell@dustintrammell.com Tue Jan 13 18:40:28 2009
+Subject: Re: Bitcoin v0.1 released
+From: "Dustin D. Trammell" <dtrammell@dustintrammell.com>
+To: satoshi@vistomail.com
+In-Reply-To: <CHILKAT-MID-4796e86e-a686-4a4b-2438-8bec9d82ecfe@server123>
+References: <CHILKAT-MID-4796e86e-a686-4a4b-2438-8bec9d82ecfe@server123>
+Content-Type: multipart/signed; micalg=pgp-sha1; protocol="application/pgp-signature"; boundary="=-6Uj1TgItQqnGup73toZt"
+Message-Id: <1231893628.9962.116.camel@localhost>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.10.3 Dropline GNOME 
+Date: Tue, 13 Jan 2009 18:40:28 -0600
+X-Evolution-Format: text/plain
+X-Evolution-Account: 1169982963.29994.8@slimer
+X-Evolution-Transport:
+ smtp://dustintrammell-dtrammell;auth=CRAM-MD5@mail.oaklabs.net/;use_ssl=always
+X-Evolution-Fcc: mbox:/home/druid/.evolution/mail/local#Sent
+
+
+--=-6Uj1TgItQqnGup73toZt
+Content-Type: text/plain
+Content-Transfer-Encoding: quoted-printable
+
+On Tue, 2009-01-13 at 15:39 +0800, Satoshi Nakamoto wrote:
+> Sweet, I was looking for a group like that on Usenet at one point to see
+> what I would use if I needed, and nothing really fit.  I'm sure Google
+> groups is a lot easier to post to.
+
+Yea, that particular group is completely open, you don't have to join to
+post (in fact I think I made it difficult for people to actually join),
+you just email proof-hashes@googlegroups.com and the content of the
+email gets posted to the group.
+
+> There are some scenarios where a Usenet or Google group could be used as
+> a supplemental defence.  Bitcoin is at its most vulnerable in the
+> beginning when the total network CPU power is small.  That's offset by
+> the fact that the incentive to attack it is also low when it's small.
+> Hopefully the easy solution of just growing up and getting past that
+> stage will work.  If not, there are ways a Google group could help, if
+> it really came to that.
+
+Yea, I was thinking you could have a client post the current block chain
+every 10k blocks or something, just to occasionally document the current
+winning proof-of-work chain.
+
+> We definitely have similar interests!
+
+Indeed.
+
+> You know, I think there were a lot more people interested in the 90's,
+> but after more than a decade of failed Trusted Third Party based systems
+> (Digicash, etc), they see it as a lost cause.  I hope they can make the
+> distinction, that this is the first time I know of that we're trying a
+> non-trust based system.=20
+
+Yea, that was the primary feature that caught my eye.  The real trick
+will be to get people to actually value the BitCoins so that they become
+currency.  Currently, they're just collections of bits...
+
+> This is all fixed in 0.1.3.  If you give me your IP, I'll send you some
+> coins.
+
+I'm currently at 24.28.79.95, but that's dynamic so it may change.  I've
+had that address for a while though so hopefully my dhcp client is being
+successful at renewing and not losing my address.  It does change from
+time to time, but that address should be good for a while.
+
+> It's not like a race where if one car is twice as fast, it'll always
+> win.  It's an SHA-256 that takes less than a microsecond, and each guess
+> has an independent chance of success.  Each computer's chance of finding
+> a hash collision is linearly proportional to it's CPU power.  A computer
+> that's half as fast would get half as many coins.
+
+Ahh I see... So each guess is like the spin of a roulette wheel,
+completely independent from all other guesses and the extra CPU power
+just translates to more successful guesses than anyone else.
+Unfortunately my ability to understand complex mathematics is conversely
+proportional to how interested I am in cryptography (:
+
+> Let me know how it goes.  If you have any trouble with it, send me your
+> debug.log file.  I can often figure out what went wrong just from that.
+
+Will do...
+
+--=20
+Dustin D. Trammell
+dtrammell@dustintrammell.com
+http://www.dustintrammell.com
+
+--=-6Uj1TgItQqnGup73toZt
+Content-Type: application/pgp-signature; name=signature.asc
+Content-Description: This is a digitally signed message part
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.7 (GNU/Linux)
+
+iD8DBQBJbTR59zsZk8QKxrkRAurUAJ95x1lb27KMZyLMpyzJP0BICoDEkwCeOt8W
+0NGNPMOAVfeU9mCvVlSQ2WA=
+=J8Ru
+-----END PGP SIGNATURE-----
+
+--=-6Uj1TgItQqnGup73toZt--
+

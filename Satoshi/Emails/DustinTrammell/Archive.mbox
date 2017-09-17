@@ -1,0 +1,1562 @@
+From dtrammell@dustintrammell.com Sun Jan 11 23:14:04 2009
+Subject: Re: Bitcoin v0.1 released
+From: "Dustin D. Trammell" <dtrammell@dustintrammell.com>
+To: satoshi@vistomail.com
+In-Reply-To: <CHILKAT-MID-3d087dc8-b531-1fd3-bebb-15dcffb225ce@server123>
+References: <CHILKAT-MID-3d087dc8-b531-1fd3-bebb-15dcffb225ce@server123>
+Content-Type: multipart/signed; micalg=pgp-sha1; protocol="application/pgp-signature"; boundary="=-5xGWqC9OFcGt3lgdaUyl"
+Message-Id: <1231737244.9962.52.camel@localhost>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.10.3 Dropline GNOME 
+Date: Sun, 11 Jan 2009 23:14:04 -0600
+X-Evolution-Format: text/plain
+X-Evolution-Account: 1169982963.29994.8@slimer
+X-Evolution-Transport:
+ smtp://dustintrammell-dtrammell;auth=CRAM-MD5@mail.oaklabs.net/;use_ssl=always
+X-Evolution-Fcc: mbox:/home/druid/.evolution/mail/local#Sent
+
+
+--=-5xGWqC9OFcGt3lgdaUyl
+Content-Type: text/plain
+Content-Transfer-Encoding: quoted-printable
+
+On Fri, 2009-01-09 at 03:27 +0800, Satoshi Nakamoto wrote:
+> Announcing the first release of Bitcoin, a new electronic cash
+> system that uses a peer-to-peer network to prevent double-spending.
+> It's completely decentralized with no server or central authority.
+
+I'm currently reading through your paper.  At the timestamp server
+section you mention newspapers and usenet, so I thought you might be
+interested in this if you have not seen it already:
+
+http://www.publictimestamp.org/
+
+By the way, I'm also currently running the alpha code on one of my
+workstations.  So far it has two "Generated" messages, however the
+"Credit" field for those is 0.00 and the balance hasn't changed.  Is
+this due to the age/maturity requirement for a coin to be valid?
+
+Cheers,
+
+--=20
+Dustin D. Trammell
+dtrammell@dustintrammell.com
+http://www.dustintrammell.com
+
+--=-5xGWqC9OFcGt3lgdaUyl
+Content-Type: application/pgp-signature; name=signature.asc
+Content-Description: This is a digitally signed message part
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.7 (GNU/Linux)
+
+iD8DBQBJatGO9zsZk8QKxrkRAizGAJ4wXYe1vyLXH15ONy6AWl8UYkK/ZgCeLlPM
+FQLKtOQ82WgjXa/aSX8W7tM=
+=AEdl
+-----END PGP SIGNATURE-----
+
+--=-5xGWqC9OFcGt3lgdaUyl--
+
+From satoshi@vistomail.com Mon Jan 12 18:52:45 2009
+Return-Path: <satoshi@vistomail.com>
+Delivered-To: dustintrammell-dtrammell@dustintrammell.com
+Received: (qmail 18309 invoked from network); 12 Jan 2009 18:52:45 -0000
+Received: from anonymousspeech.com (HELO mail.anonymousspeech.com)
+ (124.217.253.42) by oaklabs.net with SMTP; 12 Jan 2009 18:52:45 -0000
+Received: from server123 ([124.217.253.42]) by anonymousspeech.com with
+ MailEnable ESMTP; Tue, 13 Jan 2009 02:42:42 +0800
+MIME-Version: 1.0
+Date: Tue, 13 Jan 2009 02:33:28 +0800
+X-Mailer: Chilkat Software Inc (http://www.chilkatsoft.com)
+X-Priority: 3 (Normal)
+Subject: Re: Bitcoin v0.1 released
+Content-Type: text/plain
+From: "Satoshi Nakamoto" <satoshi@vistomail.com>
+Reply-To: satoshi@vistomail.com
+To: dtrammell@dustintrammell.com
+Message-ID: <CHILKAT-MID-8f43d6cf-f570-d943-f12d-ae24bbcf04c3@server123>
+X-Evolution-Source: pop://dustintrammell-dtrammell@mail.oaklabs.net/
+Content-Transfer-Encoding: 8bit
+
+> I'm currently reading through your paper.  At the timestamp server
+> section you mention newspapers and usenet, so I thought you might be
+> interested in this if you have not seen it already:
+>
+> http://www.publictimestamp.org/
+
+Thanks, I hadn't seen that yet.  It looks very well presented.
+There was an older one that's been running for a long time that
+publishes its hashes to Usenet.  I'm surprised this one isn't
+using Usenet, although it is kind of difficult to get access to
+post to Usenet in an automated way these days.  If they can get a
+magazine or newspaper to publish their hashes, it would work a lot
+easier in court for their purposes.  Bitcoin and all timestamp
+servers share the basic functionality of periodically collecting
+things into blocks and hashing them into a chain.
+
+
+> By the way, I'm also currently running the alpha code on one of my
+> workstations.  So far it has two "Generated" messages, however the
+> "Credit" field for those is 0.00 and the balance hasn't changed.  Is
+> this due to the age/maturity requirement for a coin to be valid?
+
+Right, the credit field stays 0.00 until it matures, then it'll be
+50.00.  Do you think it would be clearer if I left the credit
+field blank until it matures?  I should put some text in the
+transaction details (when you double click on it) explaining how
+it works.  (was it obvious you can doubleclick on a line for
+details?)
+
+Be sure to upgrade to v0.1.3 if you haven't already.  This version
+has really stabilized things.
+
+Satoshi
+
+
+
+
+From dtrammell@dustintrammell.com Mon Jan 12 21:29:52 2009
+Subject: Re: Bitcoin v0.1 released
+From: "Dustin D. Trammell" <dtrammell@dustintrammell.com>
+To: satoshi@vistomail.com
+In-Reply-To: <CHILKAT-MID-8f43d6cf-f570-d943-f12d-ae24bbcf04c3@server123>
+References: <CHILKAT-MID-8f43d6cf-f570-d943-f12d-ae24bbcf04c3@server123>
+Content-Type: multipart/signed; micalg=pgp-sha1; protocol="application/pgp-signature"; boundary="=-Yoe6vqiBGHlFKYIj3aWW"
+Message-Id: <1231817391.9962.81.camel@localhost>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.10.3 Dropline GNOME 
+Date: Mon, 12 Jan 2009 21:29:52 -0600
+X-Evolution-Format: text/plain
+X-Evolution-Account: 1169982963.29994.8@slimer
+X-Evolution-Transport:
+ smtp://dustintrammell-dtrammell;auth=CRAM-MD5@mail.oaklabs.net/;use_ssl=always
+X-Evolution-Fcc: mbox:/home/druid/.evolution/mail/local#Sent
+
+
+--=-Yoe6vqiBGHlFKYIj3aWW
+Content-Type: text/plain
+Content-Transfer-Encoding: quoted-printable
+
+On Tue, 2009-01-13 at 02:33 +0800, Satoshi Nakamoto wrote:
+> Thanks, I hadn't seen that yet.  It looks very well presented.
+> There was an older one that's been running for a long time that
+> publishes its hashes to Usenet.  I'm surprised this one isn't
+> using Usenet, although it is kind of difficult to get access to
+> post to Usenet in an automated way these days.  If they can get a
+> magazine or newspaper to publish their hashes, it would work a lot
+> easier in court for their purposes.  Bitcoin and all timestamp
+> servers share the basic functionality of periodically collecting
+> things into blocks and hashing them into a chain.
+
+It actually posts the hash blocks to a Google Group called
+'proof-hashes', so similar result as if it were posting to Usenet.
+
+http://groups.google.com/group/proof-hashes
+
+Since I run that group, and it's sole purpose is to archive
+proof-of-work hashes, feel free to join an account to have your system
+post there as well if you like.
+
+> Right, the credit field stays 0.00 until it matures, then it'll be
+> 50.00.  Do you think it would be clearer if I left the credit
+> field blank until it matures?  I should put some text in the
+> transaction details (when you double click on it) explaining how
+> it works.  (was it obvious you can doubleclick on a line for
+> details?)
+
+No, I think having $0.00 there is more appropriate than being blank.
+The entries in my BitCoin software (4 of them now) all say 'unconfirmed'
+however, so I'm not sure what that means, but I did grok that the coins
+were generated and just not 'mature' yet, but I had also read your
+whitepaper so I may have understood that concept from there.  When the
+coins mature, will that generate a new 'credit' transaction, or will the
+existing generation transaction line's credit field be updated?
+
+No, I was unaware that you could double-click a transaction line for
+further details...  I just did that and it currently just has the same
+information there that is in the transaction line.  Putting more
+information there would definitely be useful.
+
+> Be sure to upgrade to v0.1.3 if you haven't already.  This version
+> has really stabilized things.
+
+I was running 0.1.1... I will update now.  Perhaps a new version
+notification or auto-update feature is in order? (:
+
+Electronic currency and cryptography are two things that I am very
+interested in so as you would assume I was drawn to this project
+immediately when I saw it posted to the Cryptography email list.  Feel
+free to ping me for feedback or to test out new features, I'll be happy
+to help out.
+
+Cheers,
+
+--=20
+Dustin D. Trammell
+dtrammell@dustintrammell.com
+http://www.dustintrammell.com
+
+--=-Yoe6vqiBGHlFKYIj3aWW
+Content-Type: application/pgp-signature; name=signature.asc
+Content-Description: This is a digitally signed message part
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.7 (GNU/Linux)
+
+iD8DBQBJbAqh9zsZk8QKxrkRAvQLAJ9RDKY6csPk4GwKN/ZKl9vFhEMm7gCfbUdW
+bgOVtr3FYdwFWR0MmBpg5x8=
+=yU6z
+-----END PGP SIGNATURE-----
+
+--=-Yoe6vqiBGHlFKYIj3aWW--
+
+From dtrammell@dustintrammell.com Mon Jan 12 21:40:58 2009
+Subject: Re: Bitcoin v0.1 released
+From: "Dustin D. Trammell" <dtrammell@dustintrammell.com>
+To: satoshi@vistomail.com
+In-Reply-To: <CHILKAT-MID-8f43d6cf-f570-d943-f12d-ae24bbcf04c3@server123>
+References: <CHILKAT-MID-8f43d6cf-f570-d943-f12d-ae24bbcf04c3@server123>
+Content-Type: multipart/signed; micalg=pgp-sha1; protocol="application/pgp-signature"; boundary="=-5QJstA7Sndp4p3UNNjZ8"
+Message-Id: <1231818058.9962.85.camel@localhost>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.10.3 Dropline GNOME 
+Date: Mon, 12 Jan 2009 21:40:58 -0600
+X-Evolution-Format: text/plain
+X-Evolution-Account: 1169982963.29994.8@slimer
+X-Evolution-Transport:
+ smtp://dustintrammell-dtrammell;auth=CRAM-MD5@mail.oaklabs.net/;use_ssl=always
+X-Evolution-Fcc: mbox:/home/druid/.evolution/mail/local#Sent
+
+
+--=-5QJstA7Sndp4p3UNNjZ8
+Content-Type: text/plain
+Content-Transfer-Encoding: quoted-printable
+
+On Tue, 2009-01-13 at 02:33 +0800, Satoshi Nakamoto wrote:
+> Be sure to upgrade to v0.1.3 if you haven't already.  This version
+> has really stabilized things.
+
+Two issues with upgrading:
+
+When closing my previous version (help said 0.1.1 but I think it was
+really 0.1.0), the process did not exit.  The UI exited but the process
+remained.  I had to manually kill the process before I was able to start
+version 0.1.3.
+
+Upon opening version 0.1.3, all four of my transaction entries still say
+'unconfirmed', but now the Descriptions say 'Generated (not accepted)'.
+Does this mean that some other node had extended the chain first and my
+coins were generated in a dead branch?  If so, why did the previous
+instance of the software not detect this immediately and begin
+generating coins in the winning branch?  Bug in 0.1.0?
+
+I'll watch this instance and see how it goes...
+
+Thanks,
+
+--=20
+Dustin D. Trammell
+dtrammell@dustintrammell.com
+http://www.dustintrammell.com
+
+--=-5QJstA7Sndp4p3UNNjZ8
+Content-Type: application/pgp-signature; name=signature.asc
+Content-Description: This is a digitally signed message part
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.7 (GNU/Linux)
+
+iD8DBQBJbA1G9zsZk8QKxrkRAusEAJ4gHxIvi5RuvxpCOGokUtWL6qgqXACdHI9t
++Uk4/E4Iy8r7MK3Hg8H4yoI=
+=qwdZ
+-----END PGP SIGNATURE-----
+
+--=-5QJstA7Sndp4p3UNNjZ8--
+
+From dtrammell@dustintrammell.com Mon Jan 12 21:49:02 2009
+Subject: One Other Question
+From: "Dustin D. Trammell" <dtrammell@dustintrammell.com>
+To: satoshi@vistomail.com
+Content-Type: multipart/signed; micalg=pgp-sha1; protocol="application/pgp-signature"; boundary="=-qVis+Rf7xvDJjwfjLb9G"
+Message-Id: <1231818541.9962.89.camel@localhost>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.10.3 Dropline GNOME 
+Date: Mon, 12 Jan 2009 21:49:02 -0600
+X-Evolution-Format: text/plain
+X-Evolution-Account: 1169982963.29994.8@slimer
+X-Evolution-Transport:
+ smtp://dustintrammell-dtrammell;auth=CRAM-MD5@mail.oaklabs.net/;use_ssl=always
+X-Evolution-Fcc: mbox:/home/druid/.evolution/mail/local#Sent
+
+
+--=-qVis+Rf7xvDJjwfjLb9G
+Content-Type: text/plain
+Content-Transfer-Encoding: quoted-printable
+
+One other question I had... What prevents the single node with the most
+CPU power from generating and retaining the majority of the BitCoins?
+If every node is working independently of all others, if one is
+significantly more powerful than the others, isn't it probable that this
+node will reach the proper conclusion before other nodes?  An
+underpowered node may get lucky once in a while, but if they are at a
+significant horsepower advantage I would expect the majority of BitCoins
+to be generated by the most powerful node.
+
+--=20
+Dustin D. Trammell
+dtrammell@dustintrammell.com
+http://www.dustintrammell.com
+
+--=-qVis+Rf7xvDJjwfjLb9G
+Content-Type: application/pgp-signature; name=signature.asc
+Content-Description: This is a digitally signed message part
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.7 (GNU/Linux)
+
+iD8DBQBJbA8o9zsZk8QKxrkRAnWFAKCAUW7MvBSEW8EW0pRqrqAYlQXCfgCeI5nX
+KjFtfQjFDk5z/a7nHUrF1m0=
+=349l
+-----END PGP SIGNATURE-----
+
+--=-qVis+Rf7xvDJjwfjLb9G--
+
+From satoshi@vistomail.com Tue Jan 13 07:55:20 2009
+Return-Path: <satoshi@vistomail.com>
+Delivered-To: dustintrammell-dtrammell@dustintrammell.com
+Received: (qmail 27444 invoked from network); 13 Jan 2009 07:55:20 -0000
+Received: from anonymousspeech.com (HELO mail.anonymousspeech.com)
+ (124.217.253.42) by oaklabs.net with SMTP; 13 Jan 2009 07:55:20 -0000
+Received: from server123 ([124.217.253.42]) by anonymousspeech.com with
+ MailEnable ESMTP; Tue, 13 Jan 2009 15:55:13 +0800
+MIME-Version: 1.0
+Date: Tue, 13 Jan 2009 15:39:31 +0800
+X-Mailer: Chilkat Software Inc (http://www.chilkatsoft.com)
+X-Priority: 3 (Normal)
+Subject: Re: Bitcoin v0.1 released
+Content-Type: text/plain
+From: "Satoshi Nakamoto" <satoshi@vistomail.com>
+Reply-To: satoshi@vistomail.com
+To: dtrammell@dustintrammell.com
+Message-ID: <CHILKAT-MID-4796e86e-a686-4a4b-2438-8bec9d82ecfe@server123>
+X-Evolution-Source: pop://dustintrammell-dtrammell@mail.oaklabs.net/
+Content-Transfer-Encoding: 8bit
+
+> It actually posts the hash blocks to a Google Group called
+> 'proof-hashes', so similar result as if it were posting to Usenet.
+>
+> http://groups.google.com/group/proof-hashes
+>
+> Since I run that group, and it's sole purpose is to archive
+> proof-of-work hashes, feel free to join an account to have your system
+> post there as well if you like.
+
+Sweet, I was looking for a group like that on Usenet at one point to see
+what I would use if I needed, and nothing really fit.  I'm sure Google
+groups is a lot easier to post to.
+
+There are some scenarios where a Usenet or Google group could be used as
+a supplemental defence.  Bitcoin is at its most vulnerable in the
+beginning when the total network CPU power is small.  That's offset by
+the fact that the incentive to attack it is also low when it's small.
+Hopefully the easy solution of just growing up and getting past that
+stage will work.  If not, there are ways a Google group could help, if
+it really came to that.
+
+
+> Electronic currency and cryptography are two things that I am very
+> interested in so as you would assume I was drawn to this project
+> immediately when I saw it posted to the Cryptography email list. Feel
+> free to ping me for feedback or to test out new features, I'll be happy
+> to help out.
+
+We definitely have similar interests!
+
+You know, I think there were a lot more people interested in the 90's,
+but after more than a decade of failed Trusted Third Party based systems
+(Digicash, etc), they see it as a lost cause.  I hope they can make the
+distinction, that this is the first time I know of that we're trying a
+non-trust based system. 
+
+
+> When the
+> coins mature, will that generate a new 'credit' transaction, or will the
+> existing generation transaction line's credit field be updated?
+
+The existing transaction line will change.  
+
+
+> Upon opening version 0.1.3, all four of my transaction entries still say
+> 'unconfirmed', but now the Descriptions say 'Generated (not accepted)'.
+> Does this mean that some other node had extended the chain first and my
+> coins were generated in a dead branch? If so, why did the previous
+> instance of the software not detect this immediately and begin
+> generating coins in the winning branch? Bug in 0.1.0?
+
+You're right, sorry about that.  It's the bug that was fixed in 0.1.3.
+The communications thread would get blocked, so you would make
+connections, but they would go silent after a while.  When you found a
+block, you couldn't broadcast it to the network, so it didn't get into
+the chain.  You weren't receiving anything either to know that the
+network had gone on without you, until you restarted it.
+
+The bug is also what caused bitcoin.exe to fail to exit.  The
+communications thread was blocked and failed to exit.  Bitcoin does a
+careful shutdown in case it might be in the middle of an important
+transaction, but actually it's completely safe to kill it.
+
+This is all fixed in 0.1.3.  If you give me your IP, I'll send you some
+coins.
+
+
+> One other question I had... What prevents the single node with the most
+> CPU power from generating and retaining the majority of the BitCoins?
+> If every node is working independently of all others, if one is
+> significantly more powerful than the others, isn't it probable that this
+> node will reach the proper conclusion before other nodes? An
+> underpowered node may get lucky once in a while, but if they are at a
+> significant horsepower advantage I would expect the majority of BitCoins
+> to be generated by the most powerful node.
+
+It's not like a race where if one car is twice as fast, it'll always
+win.  It's an SHA-256 that takes less than a microsecond, and each guess
+has an independent chance of success.  Each computer's chance of finding
+a hash collision is linearly proportional to it's CPU power.  A computer
+that's half as fast would get half as many coins.
+
+
+> I'll watch this instance and see how it goes...
+
+Let me know how it goes.  If you have any trouble with it, send me your
+debug.log file.  I can often figure out what went wrong just from that.
+
+Satoshi
+
+
+
+
+From dtrammell@dustintrammell.com Tue Jan 13 18:40:28 2009
+Subject: Re: Bitcoin v0.1 released
+From: "Dustin D. Trammell" <dtrammell@dustintrammell.com>
+To: satoshi@vistomail.com
+In-Reply-To: <CHILKAT-MID-4796e86e-a686-4a4b-2438-8bec9d82ecfe@server123>
+References: <CHILKAT-MID-4796e86e-a686-4a4b-2438-8bec9d82ecfe@server123>
+Content-Type: multipart/signed; micalg=pgp-sha1; protocol="application/pgp-signature"; boundary="=-6Uj1TgItQqnGup73toZt"
+Message-Id: <1231893628.9962.116.camel@localhost>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.10.3 Dropline GNOME 
+Date: Tue, 13 Jan 2009 18:40:28 -0600
+X-Evolution-Format: text/plain
+X-Evolution-Account: 1169982963.29994.8@slimer
+X-Evolution-Transport:
+ smtp://dustintrammell-dtrammell;auth=CRAM-MD5@mail.oaklabs.net/;use_ssl=always
+X-Evolution-Fcc: mbox:/home/druid/.evolution/mail/local#Sent
+
+
+--=-6Uj1TgItQqnGup73toZt
+Content-Type: text/plain
+Content-Transfer-Encoding: quoted-printable
+
+On Tue, 2009-01-13 at 15:39 +0800, Satoshi Nakamoto wrote:
+> Sweet, I was looking for a group like that on Usenet at one point to see
+> what I would use if I needed, and nothing really fit.  I'm sure Google
+> groups is a lot easier to post to.
+
+Yea, that particular group is completely open, you don't have to join to
+post (in fact I think I made it difficult for people to actually join),
+you just email proof-hashes@googlegroups.com and the content of the
+email gets posted to the group.
+
+> There are some scenarios where a Usenet or Google group could be used as
+> a supplemental defence.  Bitcoin is at its most vulnerable in the
+> beginning when the total network CPU power is small.  That's offset by
+> the fact that the incentive to attack it is also low when it's small.
+> Hopefully the easy solution of just growing up and getting past that
+> stage will work.  If not, there are ways a Google group could help, if
+> it really came to that.
+
+Yea, I was thinking you could have a client post the current block chain
+every 10k blocks or something, just to occasionally document the current
+winning proof-of-work chain.
+
+> We definitely have similar interests!
+
+Indeed.
+
+> You know, I think there were a lot more people interested in the 90's,
+> but after more than a decade of failed Trusted Third Party based systems
+> (Digicash, etc), they see it as a lost cause.  I hope they can make the
+> distinction, that this is the first time I know of that we're trying a
+> non-trust based system.=20
+
+Yea, that was the primary feature that caught my eye.  The real trick
+will be to get people to actually value the BitCoins so that they become
+currency.  Currently, they're just collections of bits...
+
+> This is all fixed in 0.1.3.  If you give me your IP, I'll send you some
+> coins.
+
+I'm currently at 24.28.79.95, but that's dynamic so it may change.  I've
+had that address for a while though so hopefully my dhcp client is being
+successful at renewing and not losing my address.  It does change from
+time to time, but that address should be good for a while.
+
+> It's not like a race where if one car is twice as fast, it'll always
+> win.  It's an SHA-256 that takes less than a microsecond, and each guess
+> has an independent chance of success.  Each computer's chance of finding
+> a hash collision is linearly proportional to it's CPU power.  A computer
+> that's half as fast would get half as many coins.
+
+Ahh I see... So each guess is like the spin of a roulette wheel,
+completely independent from all other guesses and the extra CPU power
+just translates to more successful guesses than anyone else.
+Unfortunately my ability to understand complex mathematics is conversely
+proportional to how interested I am in cryptography (:
+
+> Let me know how it goes.  If you have any trouble with it, send me your
+> debug.log file.  I can often figure out what went wrong just from that.
+
+Will do...
+
+--=20
+Dustin D. Trammell
+dtrammell@dustintrammell.com
+http://www.dustintrammell.com
+
+--=-6Uj1TgItQqnGup73toZt
+Content-Type: application/pgp-signature; name=signature.asc
+Content-Description: This is a digitally signed message part
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.7 (GNU/Linux)
+
+iD8DBQBJbTR59zsZk8QKxrkRAurUAJ95x1lb27KMZyLMpyzJP0BICoDEkwCeOt8W
+0NGNPMOAVfeU9mCvVlSQ2WA=
+=J8Ru
+-----END PGP SIGNATURE-----
+
+--=-6Uj1TgItQqnGup73toZt--
+
+From dtrammell@dustintrammell.com Thu Jan 15 00:05:15 2009
+Subject: A few thoughts...
+From: "Dustin D. Trammell" <dtrammell@dustintrammell.com>
+To: satoshi@vistomail.com
+Content-Type: multipart/signed; micalg=pgp-sha1; protocol="application/pgp-signature"; boundary="=-IAkXUtzFMYyUa7Cy9Lud"
+Message-Id: <1231999514.9962.163.camel@localhost>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.10.3 Dropline GNOME 
+Date: Thu, 15 Jan 2009 00:05:15 -0600
+X-Evolution-Format: text/plain
+X-Evolution-Account: 1169982963.29994.8@slimer
+X-Evolution-Transport:
+ smtp://dustintrammell-dtrammell;auth=CRAM-MD5@mail.oaklabs.net/;use_ssl=always
+X-Evolution-Fcc: mbox:/home/druid/.evolution/mail/local#Sent
+
+
+--=-IAkXUtzFMYyUa7Cy9Lud
+Content-Type: text/plain
+Content-Transfer-Encoding: quoted-printable
+
+I'm glad to see you considered the possibility of a BitCoin client
+making a payment to itself and have an appropriate description in the
+transaction log (:
+
+I did this primarily so that I could get a packet capture of the network
+traffic during a transaction to analyze.  Without knowing your packet
+structure, I only see a bit of cleartext information in the packets,
+mostly just what is shown in the transaction detail such as name and
+comments.  There are a couple of other strings that show upon the wire
+such as 'version' and 'reply', but the rest is pretty cryptic.
+
+While pondering transactions, I realized that there is no identifiable
+information involved other than an IP address or a BitCoin address.  In
+the case of the IP transaction, the BitCoin client seems to trust that
+the IP that it has connected to really is the intended recipient of the
+transaction.  It is fairly trivial to launch a man-in-the-middle attack
+and steal incoming transactions.  Consider the scenario where a
+co-worker and myself have our workstations on the same LAN.  Being
+nefarious, I could be ARP poisoning the local broadcast domain and
+routing all traffic destined for his workstation through my workstation
+as an intermediary.  Both of us, not being good employees, play the
+MMORPG-du-jour and like to buy and sell game items using BitCoins.  I
+could easily watch for incoming connections on TCP port 8333 and
+terminate them at my workstation rather than passing those particular
+connections on to his workstation.  A bit convoluted, yes, but it
+illustrates the point.  This type of attack could be performed at any
+hop along the route between the two transacting parties.  If I were an
+evil admin at Big ISP USA, well, you get the idea.
+
+I would recommend not allowing the use of network addresses as the
+address of an intended recipient.  I would think it would be a bit more
+secure to always require a BitCoin address and do transactions that way.
+If I understand how that is done correctly, you just compute the
+transaction into the block chain and let the intended recipient
+'discover' it, correct?  An alternative could be to allow the network
+nodes to provide a resolution service, where they ask around for the
+network address of a BitCoin address, and if that node is online, once a
+consensus is agreed upon by the network for that address the sending
+BitCoin application connects directly there.  Because the BitCoin
+addresses are tied to the keys of the node, I would think that some
+method could be devised to prove ownership of that BitCoin address by
+the sending node and not to proceed with the transaction if so.  At the
+very least I would recommend, if you intend to retain the recipient
+addressing by IP method is to allow for matching a hash of a shared
+secret between the parties or something that an intermediary would not
+know, but since you have the crypto in place, keys generated, etc.
+anyhow, using that would be a much stronger solution.
+
+Or am I over-thinking this and the network connection is just to send
+immediate notification of the transaction and context information such
+as the comment?  The BitCoin application mentioned getting the
+recipient's public key and a few other things, and there seems to be a
+lot more going on in the network traffic than what would be required for
+a simple notification.
+
+Talk to you soon,
+
+--=20
+Dustin D. Trammell
+dtrammell@dustintrammell.com
+http://www.dustintrammell.com
+
+--=-IAkXUtzFMYyUa7Cy9Lud
+Content-Type: application/pgp-signature; name=signature.asc
+Content-Description: This is a digitally signed message part
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.7 (GNU/Linux)
+
+iD8DBQBJbtIV9zsZk8QKxrkRAk0tAJ4qTBPKbmPE6Mfy8z2rfPASPdUSKgCfbIet
+6WjNGdD3erU9pR/tZp4DKwA=
+=rAP3
+-----END PGP SIGNATURE-----
+
+--=-IAkXUtzFMYyUa7Cy9Lud--
+
+From satoshi@vistomail.com Thu Jan 15 19:15:23 2009
+Return-Path: <satoshi@vistomail.com>
+Delivered-To: dustintrammell-dtrammell@dustintrammell.com
+Received: (qmail 17174 invoked from network); 15 Jan 2009 19:15:23 -0000
+Received: from anonymousspeech.com (HELO mail.anonymousspeech.com)
+ (124.217.253.42) by oaklabs.net with SMTP; 15 Jan 2009 19:15:23 -0000
+Received: from server123 ([124.217.253.42]) by anonymousspeech.com with
+ MailEnable ESMTP; Fri, 16 Jan 2009 03:15:14 +0800
+MIME-Version: 1.0
+Date: Fri, 16 Jan 2009 03:10:44 +0800
+X-Mailer: Chilkat Software Inc (http://www.chilkatsoft.com)
+X-Priority: 3 (Normal)
+Subject: Re: Bitcoin v0.1 released
+Content-Type: text/plain
+From: "Satoshi Nakamoto" <satoshi@vistomail.com>
+Reply-To: satoshi@vistomail.com
+To: dtrammell@dustintrammell.com
+Message-ID: <CHILKAT-MID-12508d7f-5ad1-08fb-c65e-5c867da87482@server123>
+X-Evolution-Source: pop://dustintrammell-dtrammell@mail.oaklabs.net/
+Content-Transfer-Encoding: 8bit
+
+> I've had that address for a while though so hopefully my dhcp
+> client is being successful at renewing and not losing my address.
+> It does change from time to time, but that address should be good
+> for a while.
+  
+There's at least one node who's inbound IP keeps changing all the
+time within the same class B.  Maybe every time the program is
+run.  I wasn't expecting that.
+
+Do you mind if I CC the rest of this to bitcoin-list or
+Cryptography?
+
+BTW, bitcoin-list is:
+bitcoin-list@lists.sourceforge.net
+Subscribe/unsubscribe page:
+http://lists.sourceforge.net/mailman/listinfo/bitcoin-list
+Archives:
+http://sourceforge.net/mailarchive/forum.php?forum_name=bitcoin-list
+
+
+> Dustin D. Trammell wrote:
+> > Satoshi Nakamoto wrote:
+> > You know, I think there were a lot more people interested in the 90's,
+> > but after more than a decade of failed Trusted Third Party based systems
+> > (Digicash, etc), they see it as a lost cause. I hope they can make the
+> > distinction that this is the first time I know of that we're trying a
+> > non-trust-based system.
+>
+> Yea, that was the primary feature that caught my eye. The real trick
+> will be to get people to actually value the BitCoins so that they become
+> currency.
+ 
+Hal sort of alluded to the possibility that it could be seen as a
+long-odds investment.  I would be surprised if 10 years from now
+we're not using electronic currency in some way, now that we know
+a way to do it that won't inevitably get dumbed down when the TTP
+gets cold feet.
+
+Even if it doesn't take off straight away, it's now available for
+use by the next guy who comes up with a plan that needs some kind
+of token or electronic currency.  It could get started in a closed
+system or narrow niche like reward points, donation tokens,
+currency for a game or micropayments for adult sites.  Once it
+gets bootstrapped, there are so many applications if you could
+effortlessly pay a few cents to a website as easily as dropping
+coins in a vending machine. 
+
+It can already be used for pay-to-send e-mail.  The send dialog is
+resizeable and you can enter as long of a message as you like.
+It's sent directly when it connects.  The recipient doubleclicks
+on the transaction to see the full message.  If someone famous is
+getting more e-mail than they can read, but would still like to
+have a way for fans to contact them, they could set up Bitcoin and
+give out the IP address on their website.  "Send X bitcoins to my
+priority hotline at this IP and I'll read the message personally."
+
+Subscription sites that need some extra proof-of-work for their
+free trial so it doesn't cannibalize subscriptions could charge
+bitcoins for the trial.
+
+Satoshi
+
+
+
+From satoshi@vistomail.com Thu Jan 15 19:46:35 2009
+Return-Path: <satoshi@vistomail.com>
+Delivered-To: dustintrammell-dtrammell@dustintrammell.com
+Received: (qmail 17744 invoked from network); 15 Jan 2009 19:46:35 -0000
+Received: from anonymousspeech.com (HELO mail.anonymousspeech.com)
+ (124.217.253.42) by oaklabs.net with SMTP; 15 Jan 2009 19:46:35 -0000
+Received: from server123 ([124.217.253.42]) by anonymousspeech.com with
+ MailEnable ESMTP; Fri, 16 Jan 2009 03:46:30 +0800
+MIME-Version: 1.0
+Date: Fri, 16 Jan 2009 03:42:00 +0800
+X-Mailer: Chilkat Software Inc (http://www.chilkatsoft.com)
+X-Priority: 3 (Normal)
+Subject: Re: A few thoughts...
+Content-Type: text/plain
+From: "Satoshi Nakamoto" <satoshi@vistomail.com>
+Reply-To: satoshi@vistomail.com
+To: dtrammell@dustintrammell.com
+Message-ID: <CHILKAT-MID-c7513ad6-448b-8470-f92b-ff663d9fd33b@server123>
+X-Evolution-Source: pop://dustintrammell-dtrammell@mail.oaklabs.net/
+Content-Transfer-Encoding: 8bit
+
+I group attacks into two classes:
+1) Attacks that can only be done by someone actually in the chain
+    of communication
+2) Attacks that can be done by anyone on the Internet from anywhere
+
+Type 1 exposes you to people in your house or company on your
+local LAN, admins at ISPs in between, and the LAN on the
+recipient's side.  Type 2 exposes you to a billion people who can
+self-select to be attackers and get economy of scale when they
+develop one technique to attack multiple victims.
+
+Sending by IP requests a new public key, so yes, it's vulnerable
+to type 1 man-in-the-middle.  If that's a concern, sending to a
+Bitcoin address doesn't have that vulnerability, although there's
+a small privacy tradeoff.  I have a feeling most of the time
+people will get Bitcoin addresses off of non-SSL websites and
+unsigned cleartext e-mail, which is already vulnerable to type 1
+and type 2 through DNS poisoning.
+
+One solution would be to use both the IP and Bitcoin addresses
+when sending (maybe 1.2.3.4-1Kn8iojk...), where the recipient uses
+the public key of the Bitcoin address to sign the new public key
+to prove that you're sending to who you think you are.  If the
+system starts to be used for real business purposes, I will
+certainly implement that.  Another solution is to use SSL.
+
+For now, it's pretty obvious that if you send to an IP, you didn't
+give any other identifying information about the recipient, so
+you're blindly sending to whoever answers that IP.
+
+Another feature for later is an option to encrypt your wallet.
+ 
+> If I understand how that is done correctly, you just compute the
+> transaction into the block chain and let the intended recipient
+> 'discover' it, correct? 
+
+That's correct.
+
+> An alternative could be to allow the network
+> nodes to provide a resolution service, where they ask around for the
+> network address of a BitCoin address, and if that node is online, once a
+> consensus is agreed upon by the network for that address the sending
+> BitCoin application connects directly there.
+
+It would be nice to only need the Bitcoin address and have the IP
+worked out behind the scenes.  Might have privacy or denial of
+service issues.  Certainly before another sending method is
+implemented, there's plenty of time now to fully think through the
+design and make sure it's the best way.
+
+Satoshi
+
+
+
+
+From dtrammell@dustintrammell.com Thu Jan 15 19:03:34 2009
+Subject: Re: A few thoughts...
+From: "Dustin D. Trammell" <dtrammell@dustintrammell.com>
+To: satoshi@vistomail.com
+In-Reply-To: <CHILKAT-MID-c7513ad6-448b-8470-f92b-ff663d9fd33b@server123>
+References: <CHILKAT-MID-c7513ad6-448b-8470-f92b-ff663d9fd33b@server123>
+Content-Type: multipart/signed; micalg=pgp-sha1; protocol="application/pgp-signature"; boundary="=-zgnJoCdeRN6Au20lTMPn"
+Message-Id: <1232067810.9962.185.camel@localhost>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.10.3 Dropline GNOME 
+Date: Thu, 15 Jan 2009 19:03:34 -0600
+X-Evolution-Format: text/plain
+X-Evolution-Account: 1169982963.29994.8@slimer
+X-Evolution-Transport:
+ smtp://dustintrammell-dtrammell;auth=CRAM-MD5@mail.oaklabs.net/;use_ssl=always
+X-Evolution-Fcc: mbox:/home/druid/.evolution/mail/local#Sent
+
+
+--=-zgnJoCdeRN6Au20lTMPn
+Content-Type: text/plain
+Content-Transfer-Encoding: quoted-printable
+
+On Fri, 2009-01-16 at 03:42 +0800, Satoshi Nakamoto wrote:
+> Sending by IP requests a new public key, so yes, it's vulnerable
+> to type 1 man-in-the-middle.  If that's a concern, sending to a
+> Bitcoin address doesn't have that vulnerability, although there's
+> a small privacy tradeoff.  I have a feeling most of the time
+> people will get Bitcoin addresses off of non-SSL websites and
+> unsigned cleartext e-mail, which is already vulnerable to type 1
+> and type 2 through DNS poisoning.
+
+True, but the upside to using the BitCoin address is that two people can
+communicate via a number of different channels to verify the address.
+If my friend gets my address off my website, and thinks something fishy
+is going on, he can call me, or IM me, or email me, etc. to verify the
+address.  An attacker would then have to basically be replacing my
+address with the malicious one in every possible communications channel,
+including voice, which is a difficult feat.  MITMing the direct
+communication via network addresses doesn't have that benefit because
+the attacker is spoofing the address or intercepting.  My friend can
+verify what my address is with me in the same ways, however verifying
+the address doesn't actually improve the situation.
+
+> One solution would be to use both the IP and Bitcoin addresses
+> when sending (maybe 1.2.3.4-1Kn8iojk...), where the recipient uses
+> the public key of the Bitcoin address to sign the new public key
+> to prove that you're sending to who you think you are.  If the
+> system starts to be used for real business purposes, I will
+> certainly implement that.  Another solution is to use SSL.
+
+That is a good solution.  If you transact regularly you probably already
+have the other person's BitCoin address in your address book.
+
+> Another feature for later is an option to encrypt your wallet.
+
+One thing that came to mind on this topic is the potential for BitCoin
+loss if you have a system failure.  The application doesn't seem to
+store any data in the directory that it runs in, so I assume it's stored
+in the registry and other places (haven't cracked out ProcessExplorer
+yet to check myself), so it may be a good idea to have the application
+be able to export everything that it needs for recovery to a file that
+could be backed up off of the system.
+=20
+> It would be nice to only need the Bitcoin address and have the IP
+> worked out behind the scenes.  Might have privacy or denial of
+> service issues.  Certainly before another sending method is
+> implemented, there's plenty of time now to fully think through the
+> design and make sure it's the best way.
+
+You could always make that optional, such as a toggle that says
+'Advertise my BitCoin address to the network' that the user could turn
+on or off.  If you're not found on the network when searched for by
+BitCoin address, the transaction is inserted into the block-chain as
+normal.  If you are, the transaction meta-data could be communicated to
+the network address.
+
+One other thing I noticed today is that if you close the application it
+doesn't appear to cleanly close it's network sockets (TCP RST's start
+flying).  Probably an item for the low-priority todo list (:
+
+Talk to you later,
+
+--=20
+Dustin D. Trammell
+dtrammell@dustintrammell.com
+http://www.dustintrammell.com
+
+--=-zgnJoCdeRN6Au20lTMPn
+Content-Type: application/pgp-signature; name=signature.asc
+Content-Description: This is a digitally signed message part
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.7 (GNU/Linux)
+
+iD8DBQBJb9za9zsZk8QKxrkRAujhAJ41W75iX5v/DdiigS+lq7hBpwMSjQCeOab2
+pMldL+8XWLjB252AApC0RJ8=
+=3MOe
+-----END PGP SIGNATURE-----
+
+--=-zgnJoCdeRN6Au20lTMPn--
+
+From dtrammell@dustintrammell.com Thu Jan 15 19:14:27 2009
+Subject: Re: Bitcoin v0.1 released
+From: "Dustin D. Trammell" <dtrammell@dustintrammell.com>
+To: satoshi@vistomail.com
+In-Reply-To: <CHILKAT-MID-12508d7f-5ad1-08fb-c65e-5c867da87482@server123>
+References: <CHILKAT-MID-12508d7f-5ad1-08fb-c65e-5c867da87482@server123>
+Content-Type: multipart/signed; micalg=pgp-sha1; protocol="application/pgp-signature"; boundary="=-mcBtW1ilIVjvRrfHEx//"
+Message-Id: <1232068466.9962.194.camel@localhost>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.10.3 Dropline GNOME 
+Date: Thu, 15 Jan 2009 19:14:27 -0600
+X-Evolution-Format: text/plain
+X-Evolution-Account: 1169982963.29994.8@slimer
+X-Evolution-Transport:
+ smtp://dustintrammell-dtrammell;auth=CRAM-MD5@mail.oaklabs.net/;use_ssl=always
+X-Evolution-Fcc: mbox:/home/druid/.evolution/mail/local#Sent
+
+
+--=-mcBtW1ilIVjvRrfHEx//
+Content-Type: text/plain
+Content-Transfer-Encoding: quoted-printable
+
+On Fri, 2009-01-16 at 03:10 +0800, Satoshi Nakamoto wrote:
+> There's at least one node who's inbound IP keeps changing all the
+> time within the same class B.  Maybe every time the program is
+> run.  I wasn't expecting that.
+
+Pretty sure that's not me.  My BitCoin application at work should be
+coming from our static NAT address and my connection at home has had the
+IP that I gave you for at least 3 days now (that I've been transferring
+coins between them for test purposes).
+
+> Do you mind if I CC the rest of this to bitcoin-list or
+> Cryptography?
+
+Sure, no problem.
+
+> BTW, bitcoin-list is:
+> bitcoin-list@lists.sourceforge.net
+> Subscribe/unsubscribe page:
+> http://lists.sourceforge.net/mailman/listinfo/bitcoin-list
+> Archives:
+> http://sourceforge.net/mailarchive/forum.php?forum_name=3Dbitcoin-list
+
+I'll join right now, thanks (:
+
+> Hal sort of alluded to the possibility that it could be seen as a
+> long-odds investment.  I would be surprised if 10 years from now
+> we're not using electronic currency in some way, now that we know
+> a way to do it that won't inevitably get dumbed down when the TTP
+> gets cold feet.
+
+Yes, I saw that message and was one of the other reasons I started up a
+node so quickly.  My systems aren't doing much of anything else while
+idle, so why not create BitCoins?  And if they're worth something
+someday...? Bonus!
+
+> Even if it doesn't take off straight away, it's now available for
+> use by the next guy who comes up with a plan that needs some kind
+> of token or electronic currency.  It could get started in a closed
+> system or narrow niche like reward points, donation tokens,
+> currency for a game or micropayments for adult sites.  Once it
+> gets bootstrapped, there are so many applications if you could
+> effortlessly pay a few cents to a website as easily as dropping
+> coins in a vending machine.=20
+
+I can see how various types of sites that have a need for micropayments
+could use them, however I also see an impedement to adoption if they
+want to use an existing BitCoin peer group rather than a closed system
+since they would first have to generate enough coins to support what
+they intend to do (or buy them from someone else).  A closed system
+obviously doesn't have that problem.
+
+> It can already be used for pay-to-send e-mail.  The send dialog is
+> resizeable and you can enter as long of a message as you like.
+> It's sent directly when it connects.  The recipient doubleclicks
+> on the transaction to see the full message.  If someone famous is
+> getting more e-mail than they can read, but would still like to
+> have a way for fans to contact them, they could set up Bitcoin and
+> give out the IP address on their website.  "Send X bitcoins to my
+> priority hotline at this IP and I'll read the message personally."
+
+Interesting application (:
+
+> Subscription sites that need some extra proof-of-work for their
+> free trial so it doesn't cannibalize subscriptions could charge
+> bitcoins for the trial.
+
+Another good idea.
+
+--=20
+Dustin D. Trammell
+dtrammell@dustintrammell.com
+http://www.dustintrammell.com
+
+--=-mcBtW1ilIVjvRrfHEx//
+Content-Type: application/pgp-signature; name=signature.asc
+Content-Description: This is a digitally signed message part
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.7 (GNU/Linux)
+
+iD8DBQBJb99v9zsZk8QKxrkRAkNZAJ9CPHRtMjyvMhu7ErpSBMT0jzYAEACfUrGt
+dzurZVLa/D7qKa+etEbnVtE=
+=JTyn
+-----END PGP SIGNATURE-----
+
+--=-mcBtW1ilIVjvRrfHEx//--
+
+From satoshi@vistomail.com Fri Jan 16 18:35:31 2009
+Return-Path: <satoshi@vistomail.com>
+Delivered-To: dustintrammell-dtrammell@dustintrammell.com
+Received: (qmail 2332 invoked from network); 16 Jan 2009 18:35:31 -0000
+Received: from anonymousspeech.com (HELO mail.anonymousspeech.com)
+ (124.217.253.42) by oaklabs.net with SMTP; 16 Jan 2009 18:35:31 -0000
+Received: from server123 ([124.217.253.42]) by anonymousspeech.com with
+ MailEnable ESMTP; Sat, 17 Jan 2009 02:35:17 +0800
+MIME-Version: 1.0
+Date: Sat, 17 Jan 2009 00:03:14 +0800
+X-Mailer: Chilkat Software Inc (http://www.chilkatsoft.com)
+X-Priority: 3 (Normal)
+Subject: Re: Bitcoin v0.1 released
+Content-Type: text/plain
+From: "Satoshi Nakamoto" <satoshi@vistomail.com>
+Reply-To: satoshi@vistomail.com
+To: dtrammell@dustintrammell.com
+Cc: bitcoin-list@lists.sourceforge.net, cryptography@metzdowd.com
+Message-ID: <CHILKAT-MID-30c0e5a0-3435-5411-3f7b-3fe798efbe86@server123>
+X-Evolution-Source: pop://dustintrammell-dtrammell@mail.oaklabs.net/
+Content-Transfer-Encoding: 8bit
+
+> Dustin D. Trammell wrote:
+> > Satoshi Nakamoto wrote:
+> > You know, I think there were a lot more people interested in the 90's,
+> > but after more than a decade of failed Trusted Third Party based systems
+> > (Digicash, etc), they see it as a lost cause. I hope they can make the
+> > distinction that this is the first time I know of that we're trying a
+> > non-trust-based system.
+>
+> Yea, that was the primary feature that caught my eye. The real trick
+> will be to get people to actually value the BitCoins so that they become
+> currency.
+ 
+I would be surprised if 10 years from now we're not using
+electronic currency in some way, now that we know a way to do it
+that won't inevitably get dumbed down when the trusted third party
+gets cold feet.
+
+It could get started in a narrow niche like reward points,
+donation tokens, currency for a game or micropayments for adult
+sites.  Initially it can be used in proof-of-work applications
+for services that could almost be free but not quite.
+
+It can already be used for pay-to-send e-mail.  The send dialog is
+resizeable and you can enter as long of a message as you like.
+It's sent directly when it connects.  The recipient doubleclicks
+on the transaction to see the full message.  If someone famous is
+getting more e-mail than they can read, but would still like to
+have a way for fans to contact them, they could set up Bitcoin and
+give out the IP address on their website.  "Send X bitcoins to my
+priority hotline at this IP and I'll read the message personally."
+
+Subscription sites that need some extra proof-of-work for their
+free trial so it doesn't cannibalize subscriptions could charge
+bitcoins for the trial.
+
+It might make sense just to get some in case it catches on.  If
+enough people think the same way, that becomes a self fulfilling
+prophecy.  Once it gets bootstrapped, there are so many
+applications if you could effortlessly pay a few cents to a
+website as easily as dropping coins in a vending machine.  
+
+Satoshi Nakamoto
+http://www.bitcoin.org
+
+
+
+
+From satoshi@vistomail.com Fri Jan 16 18:42:18 2009
+Return-Path: <satoshi@vistomail.com>
+Delivered-To: dustintrammell-dtrammell@dustintrammell.com
+Received: (qmail 2400 invoked from network); 16 Jan 2009 18:42:18 -0000
+Received: from anonymousspeech.com (HELO mail.anonymousspeech.com)
+ (124.217.253.42) by oaklabs.net with SMTP; 16 Jan 2009 18:42:18 -0000
+Received: from server123 ([124.217.253.42]) by anonymousspeech.com with
+ MailEnable ESMTP; Sat, 17 Jan 2009 02:42:14 +0800
+MIME-Version: 1.0
+Date: Sat, 17 Jan 2009 02:41:48 +0800
+X-Mailer: Chilkat Software Inc (http://www.chilkatsoft.com)
+X-Priority: 3 (Normal)
+Subject: Re: A few thoughts...
+Content-Type: text/plain
+From: "Satoshi Nakamoto" <satoshi@vistomail.com>
+Reply-To: satoshi@vistomail.com
+To: dtrammell@dustintrammell.com
+Message-ID: <CHILKAT-MID-11ee8d86-843d-4e12-2946-85e68444a44c@server123>
+X-Evolution-Source: pop://dustintrammell-dtrammell@mail.oaklabs.net/
+Content-Transfer-Encoding: 8bit
+
+> One thing that came to mind on this topic is the potential for BitCoin
+> loss if you have a system failure. The application doesn't seem to
+> store any data in the directory that it runs in, so I assume it's stored
+> in the registry and other places (haven't cracked out ProcessExplorer
+> yet to check myself), so it may be a good idea to have the application
+> be able to export everything that it needs for recovery to a file that
+> could be backed up off of the system.
+ 
+The files are in "%appdata%\Bitcoin", that's the directory to
+backup.  The data is stored in a transactional database DBM, so
+it should be safe from loss if there's a crash or power failure.
+
+%appdata% is per-user access privilege.  Most new programs like
+Firefox store their settings files there, despite the headwind of
+Microsoft changing the directory name with every Windows release
+and being full of spaces and so long it runs off the screen.
+
+> One other thing I noticed today is that if you close the application it
+> doesn't appear to cleanly close it's network sockets (TCP RST's start
+> flying). Probably an item for the low-priority todo list (:
+ 
+Just now added code to the next release for that.
+
+Satoshi
+
+
+
+From owner-cryptography@metzdowd.com Sat Jan 17 14:58:34 2009
+Return-Path: <owner-cryptography+druid=caughq.org@metzdowd.com>
+Delivered-To: druid@caughq.org
+Received: (qmail 23193 invoked from network); 17 Jan 2009 14:58:34 -0000
+Received: from green.metzdowd.com (166.84.7.15) by mail.caughq.org with
+ SMTP; 17 Jan 2009 14:58:34 -0000
+Received: by green.metzdowd.com (Postfix, from userid 1101) id E4E5D6DA3C;
+ Sat, 17 Jan 2009 09:58:16 -0500 (EST)
+Delivered-To: cryptography@metzdowd.com
+Received: from hacklheber.piermont.com (hacklheber.piermont.com
+ [166.84.7.14]) by green.metzdowd.com (Postfix) with ESMTP id 5A5826DA36 for
+ <cryptography@metzdowd.com>; Sat, 17 Jan 2009 09:58:16 -0500 (EST)
+Received: from snark.piermont.com (localhost [127.0.0.1]) by
+ hacklheber.piermont.com (Postfix) with ESMTP id 7C3ABEF320 for
+ <cryptography@metzdowd.com>; Sat, 17 Jan 2009 09:58:14 -0500 (EST)
+Received: by snark.piermont.com (Postfix, from userid 1000) id 39CE58D23F6;
+ Sat, 17 Jan 2009 09:58:14 -0500 (EST)
+Received: from mail.anonymousspeech.com (anonymousspeech.com
+ [124.217.253.42]) by green.metzdowd.com (Postfix) with ESMTP id 4DC4F6DA1E
+ for <cryptography@metzdowd.com>; Fri, 16 Jan 2009 13:35:24 -0500 (EST)
+Received: from server123 ([124.217.253.42]) by anonymousspeech.com with
+ MailEnable ESMTP; Sat, 17 Jan 2009 02:35:17 +0800
+MIME-Version: 1.0
+Date: Sat, 17 Jan 2009 00:03:14 +0800
+X-Mailer: Chilkat Software Inc (http://www.chilkatsoft.com)
+X-Priority: 3 (Normal)
+Subject: Re: Bitcoin v0.1 released
+Content-Type: text/plain
+From: "Satoshi Nakamoto" <satoshi@vistomail.com>
+Reply-To: satoshi@vistomail.com
+To: dtrammell@dustintrammell.com
+Cc: bitcoin-list@lists.sourceforge.net, cryptography@metzdowd.com
+Message-ID: <CHILKAT-MID-30c0e5a0-3435-5411-3f7b-3fe798efbe86@server123>
+Sender: owner-cryptography@metzdowd.com
+Precedence: bulk
+X-Evolution-Source: pop://druid@mail.caughq.org/
+Content-Transfer-Encoding: 8bit
+
+> Dustin D. Trammell wrote:
+> > Satoshi Nakamoto wrote:
+> > You know, I think there were a lot more people interested in the 90's,
+> > but after more than a decade of failed Trusted Third Party based systems
+> > (Digicash, etc), they see it as a lost cause. I hope they can make the
+> > distinction that this is the first time I know of that we're trying a
+> > non-trust-based system.
+>
+> Yea, that was the primary feature that caught my eye. The real trick
+> will be to get people to actually value the BitCoins so that they become
+> currency.
+ 
+I would be surprised if 10 years from now we're not using
+electronic currency in some way, now that we know a way to do it
+that won't inevitably get dumbed down when the trusted third party
+gets cold feet.
+
+It could get started in a narrow niche like reward points,
+donation tokens, currency for a game or micropayments for adult
+sites.  Initially it can be used in proof-of-work applications
+for services that could almost be free but not quite.
+
+It can already be used for pay-to-send e-mail.  The send dialog is
+resizeable and you can enter as long of a message as you like.
+It's sent directly when it connects.  The recipient doubleclicks
+on the transaction to see the full message.  If someone famous is
+getting more e-mail than they can read, but would still like to
+have a way for fans to contact them, they could set up Bitcoin and
+give out the IP address on their website.  "Send X bitcoins to my
+priority hotline at this IP and I'll read the message personally."
+
+Subscription sites that need some extra proof-of-work for their
+free trial so it doesn't cannibalize subscriptions could charge
+bitcoins for the trial.
+
+It might make sense just to get some in case it catches on.  If
+enough people think the same way, that becomes a self fulfilling
+prophecy.  Once it gets bootstrapped, there are so many
+applications if you could effortlessly pay a few cents to a
+website as easily as dropping coins in a vending machine.  
+
+Satoshi Nakamoto
+http://www.bitcoin.org
+
+
+---------------------------------------------------------------------
+The Cryptography Mailing List
+Unsubscribe by sending "unsubscribe cryptography" to majordomo@metzdowd.com
+
+
+From dtrammell@dustintrammell.com Sun Jan 18 09:23:02 2009
+Subject: BitCoin Transfer
+From: "Dustin D. Trammell" <dtrammell@dustintrammell.com>
+To: satoshi@vistomail.com
+Content-Type: multipart/signed; micalg=pgp-sha1; protocol="application/pgp-signature"; boundary="=-44zoTkcIOB2SVce0O9o3"
+Message-Id: <1232292181.9962.257.camel@localhost>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.10.3 Dropline GNOME 
+Date: Sun, 18 Jan 2009 09:23:02 -0600
+X-Evolution-Format: text/plain
+X-Evolution-Account: 1169982963.29994.8@slimer
+X-Evolution-Transport:
+ smtp://dustintrammell-dtrammell;auth=CRAM-MD5@mail.oaklabs.net/;use_ssl=always
+X-Evolution-Fcc: mbox:/home/druid/.evolution/mail/local#Sent
+
+
+--=-44zoTkcIOB2SVce0O9o3
+Content-Type: text/plain
+Content-Transfer-Encoding: quoted-printable
+
+Hey Satoshi,
+
+After that first transfer of 25.00, you didn't send me another 100.00
+did you?  I sent myself 100.00 from my BitCoin application at work to my
+one at home using the BitCoin address rather than by IP.  My application
+at home has a 100.00 transfer received, however it's transaction details
+say "Received with: Satoshi 12higDjoCCNXSA95xZMWUdPvXNmkAduhWv".  That
+is not my BitCoin address from work, so I assume this means that I
+received the payment encoded with a block that was computed by your
+client?  If so, how did it know your name in addition to the BitCoin
+address that generated it?  I don't recall there being a place in my
+application to even put my name.
+
+--=20
+Dustin D. Trammell
+dtrammell@dustintrammell.com
+http://www.dustintrammell.com
+
+--=-44zoTkcIOB2SVce0O9o3
+Content-Type: application/pgp-signature; name=signature.asc
+Content-Description: This is a digitally signed message part
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.7 (GNU/Linux)
+
+iD8DBQBJc0lT9zsZk8QKxrkRAmkxAJ9PHdbDIyutScHXLr5CXRQbnek/AACfYPIt
+BqjggBKi2v5ZNfY7c6Fvu+E=
+=wSLo
+-----END PGP SIGNATURE-----
+
+--=-44zoTkcIOB2SVce0O9o3--
+
+From satoshi@vistomail.com Sun Jan 18 17:01:09 2009
+Return-Path: <satoshi@vistomail.com>
+Delivered-To: dustintrammell-dtrammell@dustintrammell.com
+Received: (qmail 6242 invoked from network); 18 Jan 2009 17:01:09 -0000
+Received: from anonymousspeech.com (HELO mail.anonymousspeech.com)
+ (124.217.253.42) by oaklabs.net with SMTP; 18 Jan 2009 17:01:09 -0000
+Received: from server123 ([124.217.253.42]) by anonymousspeech.com with
+ MailEnable ESMTP; Mon, 19 Jan 2009 01:00:59 +0800
+MIME-Version: 1.0
+Date: Mon, 19 Jan 2009 00:54:32 +0800
+X-Mailer: Chilkat Software Inc (http://www.chilkatsoft.com)
+X-Priority: 3 (Normal)
+Subject: Re: Bitcoin Transfer
+Content-Type: text/plain
+From: "Satoshi Nakamoto" <satoshi@vistomail.com>
+Reply-To: satoshi@vistomail.com
+To: dtrammell@dustintrammell.com
+Message-ID: <CHILKAT-MID-365d0fe3-70f0-6f32-75a4-0c939706daf9@server123>
+X-Evolution-Source: pop://dustintrammell-dtrammell@mail.oaklabs.net/
+Content-Transfer-Encoding: 8bit
+
+It should be your Bitcoin address at home that you received it
+with.  There's no way for it to know who it's from, so the best
+it can do is tell which of your addresses it was received on.
+You can create multiple addresses and give a different address
+to each person and label them to help figure out who's sending
+to you.
+
+It doesn't know any names other than what you tell it.  The name
+printed there is what's associated in your address book for that
+address, either under the Address Book button or the "Change..."
+button to the right of your Bitcoin address.
+
+>Hey Satoshi,
+>
+>After that first transfer of 25.00, you didn't send me another 100.00
+>did you?  I sent myself 100.00 from my BitCoin application at work to my
+>one at home using the BitCoin address rather than by IP.  My application
+>at home has a 100.00 transfer received, however it's transaction details
+>say "Received with: Satoshi 12higDjoCCNXSA95xZMWUdPvXNmkAduhWv".  That
+>is not my BitCoin address from work, so I assume this means that I
+>received the payment encoded with a block that was computed by your
+>client?  If so, how did it know your name in addition to the BitCoin
+>address that generated it?  I don't recall there being a place in my
+>application to even put my name.
+>
+>-- 
+>Dustin D. Trammell
+>dtrammell@dustintrammell.com
+>http://www.dustintrammell.com
+>
+
+
+
+
+From dtrammell@dustintrammell.com Sun Jan 18 18:09:32 2009
+Subject: Re: Bitcoin Transfer
+From: "Dustin D. Trammell" <dtrammell@dustintrammell.com>
+To: satoshi@vistomail.com
+In-Reply-To: <CHILKAT-MID-365d0fe3-70f0-6f32-75a4-0c939706daf9@server123>
+References: <CHILKAT-MID-365d0fe3-70f0-6f32-75a4-0c939706daf9@server123>
+Content-Type: multipart/signed; micalg=pgp-sha1; protocol="application/pgp-signature"; boundary="=-z95o/s3uHUjxY9HL4YGL"
+Message-Id: <1232323771.9962.266.camel@localhost>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.10.3 Dropline GNOME 
+Date: Sun, 18 Jan 2009 18:09:32 -0600
+X-Evolution-Format: text/plain
+X-Evolution-Account: 1169982963.29994.8@slimer
+X-Evolution-Transport:
+ smtp://dustintrammell-dtrammell;auth=CRAM-MD5@mail.oaklabs.net/;use_ssl=always
+X-Evolution-Fcc: mbox:/home/druid/.evolution/mail/local#Sent
+
+
+--=-z95o/s3uHUjxY9HL4YGL
+Content-Type: text/plain
+Content-Transfer-Encoding: quoted-printable
+
+On Mon, 2009-01-19 at 00:54 +0800, Satoshi Nakamoto wrote:
+> It should be your Bitcoin address at home that you received it
+> with.  There's no way for it to know who it's from, so the best
+> it can do is tell which of your addresses it was received on.
+> You can create multiple addresses and give a different address
+> to each person and label them to help figure out who's sending
+> to you.
+
+Ah!  I didn't even notice it was my address at home, you're right (:  I
+do have multiple addresses created at home so I didn't make the
+connection.
+
+> It doesn't know any names other than what you tell it.  The name
+> printed there is what's associated in your address book for that
+> address, either under the Address Book button or the "Change..."
+> button to the right of your Bitcoin address.
+
+Ahh you're right, 'Satoshi' is associated with the address that received
+the payment under the Change button's addresses.  I don't recall setting
+that value though, is that the default or something? (this is the first,
+default, address that the application generated itself when I first ran
+it)
+
+--=20
+Dustin D. Trammell
+dtrammell@dustintrammell.com
+http://www.dustintrammell.com
+
+--=-z95o/s3uHUjxY9HL4YGL
+Content-Type: application/pgp-signature; name=signature.asc
+Content-Description: This is a digitally signed message part
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.7 (GNU/Linux)
+
+iD8DBQBJc8S59zsZk8QKxrkRAhC7AJ9VVeazKMab1uqLcmnnuR/3KP6UqgCeInZN
+ynEtSfyVjJr4NY+x5uZBibA=
+=4pvz
+-----END PGP SIGNATURE-----
+
+--=-z95o/s3uHUjxY9HL4YGL--
+
+From satoshi@vistomail.com Mon Jan 19 17:02:37 2009
+Return-Path: <satoshi@vistomail.com>
+Delivered-To: dustintrammell-dtrammell@dustintrammell.com
+Received: (qmail 26630 invoked from network); 19 Jan 2009 17:02:37 -0000
+Received: from anonymousspeech.com (HELO mail.anonymousspeech.com)
+ (124.217.253.42) by oaklabs.net with SMTP; 19 Jan 2009 17:02:37 -0000
+Received: from server123 ([124.217.253.42]) by anonymousspeech.com with
+ MailEnable ESMTP; Tue, 20 Jan 2009 01:02:22 +0800
+MIME-Version: 1.0
+Date: Tue, 20 Jan 2009 00:44:05 +0800
+X-Mailer: Chilkat Software Inc (http://www.chilkatsoft.com)
+X-Priority: 3 (Normal)
+Subject: Re: Bitcoin Transfer
+Content-Type: text/plain
+From: "Satoshi Nakamoto" <satoshi@vistomail.com>
+Reply-To: satoshi@vistomail.com
+To: dtrammell@dustintrammell.com
+Message-ID: <CHILKAT-MID-a4a29e15-b5ce-16c0-623b-a55796bbb88b@server123>
+X-Evolution-Source: pop://dustintrammell-dtrammell@mail.oaklabs.net/
+Content-Transfer-Encoding: 8bit
+
+>On Mon, 2009-01-19 at 00:54 +0800, Satoshi Nakamoto wrote:
+>> It should be your Bitcoin address at home that you received it
+>> with.  There's no way for it to know who it's from, so the best
+>> it can do is tell which of your addresses it was received on.
+>> You can create multiple addresses and give a different address
+>> to each person and label them to help figure out who's sending
+>> to you.
+>
+>Ah!  I didn't even notice it was my address at home, you're right (:  I
+>do have multiple addresses created at home so I didn't make the
+>connection.
+>
+>> It doesn't know any names other than what you tell it.  The name
+>> printed there is what's associated in your address book for that
+>> address, either under the Address Book button or the "Change..."
+>> button to the right of your Bitcoin address.
+>
+>Ahh you're right, 'Satoshi' is associated with the address that received
+>the payment under the Change button's addresses.  I don't recall setting
+>that value though, is that the default or something? (this is the first,
+>default, address that the application generated itself when I first ran
+>it)
+
+The first default one is labelled "Your Address" when it's created.
+
+All the places where address book labels are set are where the user manually sets it.  The only time it automatically adds a label is a blank one when you send to a new address.  I guess you could have entered the label on an address you thought was mine but the software was confusing and you put it in the wrong place.
+
+Address book labels for receiving addresses is confusing but I'm not sure what else to do.  Anyone using it for more than just simple purposes would need to create different receiving addresses for each payer so they could tell who's paying them.  That concept doesn't have much analogy in the real world.
+
+Satoshi
+
+
+
+From dtrammell@dustintrammell.com Mon Jan 19 19:58:23 2009
+Subject: Re: Bitcoin Transfer
+From: "Dustin D. Trammell" <dtrammell@dustintrammell.com>
+To: satoshi@vistomail.com
+In-Reply-To: <CHILKAT-MID-a4a29e15-b5ce-16c0-623b-a55796bbb88b@server123>
+References: <CHILKAT-MID-a4a29e15-b5ce-16c0-623b-a55796bbb88b@server123>
+Content-Type: multipart/signed; micalg=pgp-sha1; protocol="application/pgp-signature"; boundary="=-h4GHT4llfgBk22m6/8oP"
+Message-Id: <1232416702.9962.293.camel@localhost>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.10.3 Dropline GNOME 
+Date: Mon, 19 Jan 2009 19:58:23 -0600
+X-Evolution-Format: text/plain
+X-Evolution-Account: 1169982963.29994.8@slimer
+X-Evolution-Transport:
+ smtp://dustintrammell-dtrammell;auth=CRAM-MD5@mail.oaklabs.net/;use_ssl=always
+X-Evolution-Fcc: mbox:/home/druid/.evolution/mail/local#Sent
+
+
+--=-h4GHT4llfgBk22m6/8oP
+Content-Type: text/plain
+Content-Transfer-Encoding: quoted-printable
+
+On Tue, 2009-01-20 at 00:44 +0800, Satoshi Nakamoto wrote:
+> The first default one is labelled "Your Address" when it's created.
+>=20
+> All the places where address book labels are set are where the user manua=
+lly sets it.  The only time it automatically adds a label is a blank one wh=
+en you send to a new address.  I guess you could have entered the label on =
+an address you thought was mine but the software was confusing and you put =
+it in the wrong place.
+
+That would make sense, I bet that's what happened.
+
+> Address book labels for receiving addresses is confusing but I'm not sure=
+ what else to do.  Anyone using it for more than just simple purposes would=
+ need to create different receiving addresses for each payer so they could =
+tell who's paying them.  That concept doesn't have much analogy in the real=
+ world.
+
+I think had it said "Received with address: X" rather than just
+"Received with: X" I think I would have understood, although I'm sure
+that address being mislabeled 'Satoshi' was the primary reason for my
+initial confusion.  You're right though, there's really nothing
+comparable in the current financial system that people are used to other
+than maybe being able to use multiple recipient email addresses for
+PayPal.  Perhaps it could say "Received payment to: X"?
+
+--=20
+Dustin D. Trammell
+dtrammell@dustintrammell.com
+http://www.dustintrammell.com
+
+--=-h4GHT4llfgBk22m6/8oP
+Content-Type: application/pgp-signature; name=signature.asc
+Content-Description: This is a digitally signed message part
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.7 (GNU/Linux)
+
+iD8DBQBJdS+89zsZk8QKxrkRAvrQAJ4kHXCU7xW72dO+52Hj4ynWhuFsvACeMDxe
+ZaJugf1kxmmgIqLxNZJhfFw=
+=Qrba
+-----END PGP SIGNATURE-----
+
+--=-h4GHT4llfgBk22m6/8oP--
+
+From satoshi@vistomail.com Sun Jan 25 16:03:21 2009
+Return-Path: <satoshi@vistomail.com>
+Delivered-To: dustintrammell-dtrammell@dustintrammell.com
+Received: (qmail 11309 invoked from network); 25 Jan 2009 16:03:21 -0000
+Received: from anonymousspeech.com (HELO mail.anonymousspeech.com)
+ (124.217.253.42) by oaklabs.net with SMTP; 25 Jan 2009 16:03:21 -0000
+Received: from server123 ([124.217.253.42]) by anonymousspeech.com with
+ MailEnable ESMTP; Mon, 26 Jan 2009 00:03:11 +0800
+MIME-Version: 1.0
+Date: Sun, 25 Jan 2009 23:47:10 +0800
+X-Mailer: Chilkat Software Inc (http://www.chilkatsoft.com)
+X-Priority: 3 (Normal)
+Subject: Re: Bitcoin v0.1 released
+Content-Type: text/plain
+From: "Satoshi Nakamoto" <satoshi@vistomail.com>
+Reply-To: satoshi@vistomail.com
+To: dtrammell@dustintrammell.com
+Message-ID: <CHILKAT-MID-e622b093-c26b-ab6c-9b35-00003814eb59@server123>
+X-Evolution-Source: pop://dustintrammell-dtrammell@mail.oaklabs.net/
+Content-Transfer-Encoding: 8bit
+
+Hal Finney wrote:
+> > * Spammer botnets could burn through pay-per-send email filters
+> >   trivially
+> If POW tokens do become useful, and especially if they become money,
+> machines will no longer sit idle. Users will expect their computers to
+> be earning them money (assuming the reward is greater than the cost to
+> operate). A computer whose earnings are being stolen by a botnet will
+> be more noticeable to its owner than is the case today, hence we might
+> expect that in that world, users will work harder to maintain their
+> computers and clean them of botnet infestations.
+
+Another factor that would mitigate spam if POW tokens have value:
+there would be a profit motive for people to set up massive
+quantities of fake e-mail accounts to harvest POW tokens from
+spam.  They'd essentially be reverse-spamming the spammers with
+automated mailboxes that collect their POW and don't read the
+message.  The ratio of fake mailboxes to real people could become
+too high for spam to be cost effective. 
+
+The process has the potential to establish the POW token's value
+in the first place, since spammers that don't have a botnet could
+buy tokens from harvesters.  While the buying back would
+temporarily let more spam through, it would only hasten the
+self-defeating cycle leading to too many harvesters exploiting the
+spammers.
+
+Interestingly, one of the e-gold systems already has a form of
+spam called "dusting".  Spammers send a tiny amount of gold dust
+in order to put a spam message in the transaction's comment field.
+ If the system let users configure the minimum payment they're
+willing to receive, or at least the minimum that can have a
+message with it, users could set how much they're willing to get
+paid to receive spam.
+
+Satoshi Nakamoto
+
+
+
+

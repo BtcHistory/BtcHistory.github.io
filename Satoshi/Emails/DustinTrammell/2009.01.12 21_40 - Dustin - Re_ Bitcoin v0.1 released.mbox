@@ -1,0 +1,63 @@
+From dtrammell@dustintrammell.com Mon Jan 12 21:40:58 2009
+Subject: Re: Bitcoin v0.1 released
+From: "Dustin D. Trammell" <dtrammell@dustintrammell.com>
+To: satoshi@vistomail.com
+In-Reply-To: <CHILKAT-MID-8f43d6cf-f570-d943-f12d-ae24bbcf04c3@server123>
+References: <CHILKAT-MID-8f43d6cf-f570-d943-f12d-ae24bbcf04c3@server123>
+Content-Type: multipart/signed; micalg=pgp-sha1; protocol="application/pgp-signature"; boundary="=-5QJstA7Sndp4p3UNNjZ8"
+Message-Id: <1231818058.9962.85.camel@localhost>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.10.3 Dropline GNOME 
+Date: Mon, 12 Jan 2009 21:40:58 -0600
+X-Evolution-Format: text/plain
+X-Evolution-Account: 1169982963.29994.8@slimer
+X-Evolution-Transport:
+ smtp://dustintrammell-dtrammell;auth=CRAM-MD5@mail.oaklabs.net/;use_ssl=always
+X-Evolution-Fcc: mbox:/home/druid/.evolution/mail/local#Sent
+
+
+--=-5QJstA7Sndp4p3UNNjZ8
+Content-Type: text/plain
+Content-Transfer-Encoding: quoted-printable
+
+On Tue, 2009-01-13 at 02:33 +0800, Satoshi Nakamoto wrote:
+> Be sure to upgrade to v0.1.3 if you haven't already.  This version
+> has really stabilized things.
+
+Two issues with upgrading:
+
+When closing my previous version (help said 0.1.1 but I think it was
+really 0.1.0), the process did not exit.  The UI exited but the process
+remained.  I had to manually kill the process before I was able to start
+version 0.1.3.
+
+Upon opening version 0.1.3, all four of my transaction entries still say
+'unconfirmed', but now the Descriptions say 'Generated (not accepted)'.
+Does this mean that some other node had extended the chain first and my
+coins were generated in a dead branch?  If so, why did the previous
+instance of the software not detect this immediately and begin
+generating coins in the winning branch?  Bug in 0.1.0?
+
+I'll watch this instance and see how it goes...
+
+Thanks,
+
+--=20
+Dustin D. Trammell
+dtrammell@dustintrammell.com
+http://www.dustintrammell.com
+
+--=-5QJstA7Sndp4p3UNNjZ8
+Content-Type: application/pgp-signature; name=signature.asc
+Content-Description: This is a digitally signed message part
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.7 (GNU/Linux)
+
+iD8DBQBJbA1G9zsZk8QKxrkRAusEAJ4gHxIvi5RuvxpCOGokUtWL6qgqXACdHI9t
++Uk4/E4Iy8r7MK3Hg8H4yoI=
+=qwdZ
+-----END PGP SIGNATURE-----
+
+--=-5QJstA7Sndp4p3UNNjZ8--
+

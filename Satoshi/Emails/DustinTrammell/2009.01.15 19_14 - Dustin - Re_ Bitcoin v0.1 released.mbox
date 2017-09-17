@@ -1,0 +1,109 @@
+From dtrammell@dustintrammell.com Thu Jan 15 19:14:27 2009
+Subject: Re: Bitcoin v0.1 released
+From: "Dustin D. Trammell" <dtrammell@dustintrammell.com>
+To: satoshi@vistomail.com
+In-Reply-To: <CHILKAT-MID-12508d7f-5ad1-08fb-c65e-5c867da87482@server123>
+References: <CHILKAT-MID-12508d7f-5ad1-08fb-c65e-5c867da87482@server123>
+Content-Type: multipart/signed; micalg=pgp-sha1; protocol="application/pgp-signature"; boundary="=-mcBtW1ilIVjvRrfHEx//"
+Message-Id: <1232068466.9962.194.camel@localhost>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.10.3 Dropline GNOME 
+Date: Thu, 15 Jan 2009 19:14:27 -0600
+X-Evolution-Format: text/plain
+X-Evolution-Account: 1169982963.29994.8@slimer
+X-Evolution-Transport:
+ smtp://dustintrammell-dtrammell;auth=CRAM-MD5@mail.oaklabs.net/;use_ssl=always
+X-Evolution-Fcc: mbox:/home/druid/.evolution/mail/local#Sent
+
+
+--=-mcBtW1ilIVjvRrfHEx//
+Content-Type: text/plain
+Content-Transfer-Encoding: quoted-printable
+
+On Fri, 2009-01-16 at 03:10 +0800, Satoshi Nakamoto wrote:
+> There's at least one node who's inbound IP keeps changing all the
+> time within the same class B.  Maybe every time the program is
+> run.  I wasn't expecting that.
+
+Pretty sure that's not me.  My BitCoin application at work should be
+coming from our static NAT address and my connection at home has had the
+IP that I gave you for at least 3 days now (that I've been transferring
+coins between them for test purposes).
+
+> Do you mind if I CC the rest of this to bitcoin-list or
+> Cryptography?
+
+Sure, no problem.
+
+> BTW, bitcoin-list is:
+> bitcoin-list@lists.sourceforge.net
+> Subscribe/unsubscribe page:
+> http://lists.sourceforge.net/mailman/listinfo/bitcoin-list
+> Archives:
+> http://sourceforge.net/mailarchive/forum.php?forum_name=3Dbitcoin-list
+
+I'll join right now, thanks (:
+
+> Hal sort of alluded to the possibility that it could be seen as a
+> long-odds investment.  I would be surprised if 10 years from now
+> we're not using electronic currency in some way, now that we know
+> a way to do it that won't inevitably get dumbed down when the TTP
+> gets cold feet.
+
+Yes, I saw that message and was one of the other reasons I started up a
+node so quickly.  My systems aren't doing much of anything else while
+idle, so why not create BitCoins?  And if they're worth something
+someday...? Bonus!
+
+> Even if it doesn't take off straight away, it's now available for
+> use by the next guy who comes up with a plan that needs some kind
+> of token or electronic currency.  It could get started in a closed
+> system or narrow niche like reward points, donation tokens,
+> currency for a game or micropayments for adult sites.  Once it
+> gets bootstrapped, there are so many applications if you could
+> effortlessly pay a few cents to a website as easily as dropping
+> coins in a vending machine.=20
+
+I can see how various types of sites that have a need for micropayments
+could use them, however I also see an impedement to adoption if they
+want to use an existing BitCoin peer group rather than a closed system
+since they would first have to generate enough coins to support what
+they intend to do (or buy them from someone else).  A closed system
+obviously doesn't have that problem.
+
+> It can already be used for pay-to-send e-mail.  The send dialog is
+> resizeable and you can enter as long of a message as you like.
+> It's sent directly when it connects.  The recipient doubleclicks
+> on the transaction to see the full message.  If someone famous is
+> getting more e-mail than they can read, but would still like to
+> have a way for fans to contact them, they could set up Bitcoin and
+> give out the IP address on their website.  "Send X bitcoins to my
+> priority hotline at this IP and I'll read the message personally."
+
+Interesting application (:
+
+> Subscription sites that need some extra proof-of-work for their
+> free trial so it doesn't cannibalize subscriptions could charge
+> bitcoins for the trial.
+
+Another good idea.
+
+--=20
+Dustin D. Trammell
+dtrammell@dustintrammell.com
+http://www.dustintrammell.com
+
+--=-mcBtW1ilIVjvRrfHEx//
+Content-Type: application/pgp-signature; name=signature.asc
+Content-Description: This is a digitally signed message part
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.7 (GNU/Linux)
+
+iD8DBQBJb99v9zsZk8QKxrkRAkNZAJ9CPHRtMjyvMhu7ErpSBMT0jzYAEACfUrGt
+dzurZVLa/D7qKa+etEbnVtE=
+=JTyn
+-----END PGP SIGNATURE-----
+
+--=-mcBtW1ilIVjvRrfHEx//--
+

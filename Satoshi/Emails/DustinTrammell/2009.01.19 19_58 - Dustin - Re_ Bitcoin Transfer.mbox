@@ -1,0 +1,66 @@
+From dtrammell@dustintrammell.com Mon Jan 19 19:58:23 2009
+Subject: Re: Bitcoin Transfer
+From: "Dustin D. Trammell" <dtrammell@dustintrammell.com>
+To: satoshi@vistomail.com
+In-Reply-To: <CHILKAT-MID-a4a29e15-b5ce-16c0-623b-a55796bbb88b@server123>
+References: <CHILKAT-MID-a4a29e15-b5ce-16c0-623b-a55796bbb88b@server123>
+Content-Type: multipart/signed; micalg=pgp-sha1; protocol="application/pgp-signature"; boundary="=-h4GHT4llfgBk22m6/8oP"
+Message-Id: <1232416702.9962.293.camel@localhost>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.10.3 Dropline GNOME 
+Date: Mon, 19 Jan 2009 19:58:23 -0600
+X-Evolution-Format: text/plain
+X-Evolution-Account: 1169982963.29994.8@slimer
+X-Evolution-Transport:
+ smtp://dustintrammell-dtrammell;auth=CRAM-MD5@mail.oaklabs.net/;use_ssl=always
+X-Evolution-Fcc: mbox:/home/druid/.evolution/mail/local#Sent
+
+
+--=-h4GHT4llfgBk22m6/8oP
+Content-Type: text/plain
+Content-Transfer-Encoding: quoted-printable
+
+On Tue, 2009-01-20 at 00:44 +0800, Satoshi Nakamoto wrote:
+> The first default one is labelled "Your Address" when it's created.
+>=20
+> All the places where address book labels are set are where the user manua=
+lly sets it.  The only time it automatically adds a label is a blank one wh=
+en you send to a new address.  I guess you could have entered the label on =
+an address you thought was mine but the software was confusing and you put =
+it in the wrong place.
+
+That would make sense, I bet that's what happened.
+
+> Address book labels for receiving addresses is confusing but I'm not sure=
+ what else to do.  Anyone using it for more than just simple purposes would=
+ need to create different receiving addresses for each payer so they could =
+tell who's paying them.  That concept doesn't have much analogy in the real=
+ world.
+
+I think had it said "Received with address: X" rather than just
+"Received with: X" I think I would have understood, although I'm sure
+that address being mislabeled 'Satoshi' was the primary reason for my
+initial confusion.  You're right though, there's really nothing
+comparable in the current financial system that people are used to other
+than maybe being able to use multiple recipient email addresses for
+PayPal.  Perhaps it could say "Received payment to: X"?
+
+--=20
+Dustin D. Trammell
+dtrammell@dustintrammell.com
+http://www.dustintrammell.com
+
+--=-h4GHT4llfgBk22m6/8oP
+Content-Type: application/pgp-signature; name=signature.asc
+Content-Description: This is a digitally signed message part
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.7 (GNU/Linux)
+
+iD8DBQBJdS+89zsZk8QKxrkRAvrQAJ4kHXCU7xW72dO+52Hj4ynWhuFsvACeMDxe
+ZaJugf1kxmmgIqLxNZJhfFw=
+=Qrba
+-----END PGP SIGNATURE-----
+
+--=-h4GHT4llfgBk22m6/8oP--
+
